@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "pemts:block/kibbleore",
+    "up": "pemts:block/kibbleore",
+    "north": "pemts:block/kibbleore",
+    "east": "pemts:block/kibbleore",
+    "south": "pemts:block/kibbleore",
+    "west": "pemts:block/kibbleore",
+    "particle": "pemts:block/kibbleore"
+  },
+  "render_type": "solid"
+}

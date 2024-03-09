@@ -1,0 +1,9 @@
+{
+  "parent": "pemts:custom/cardboard_box",
+  "textures": {
+    "all": "pemts:block/cardboard_box",
+    "particle": "pemts:block/cardboard_box",
+    "2": "pemts:block/cardboard_box"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Bottle of Sauce",
+    "splashName": "Splash Sauce",
+    "lingeringName": "Lingering Sauce",
+    "arrowName": "Arrow of Sauce",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Spiced"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

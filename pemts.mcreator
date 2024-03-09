@@ -1,0 +1,871 @@
+{
+  "mod_elements": [
+    {
+      "name": "Pemt",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pemt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/client/renderer/PemtRenderer.java",
+          "src/main/java/net/havensgaming/pemts/entity/PemtEntity.java",
+          "src/main/resources/assets/pemts/models/item/pemt_spawn_egg.json"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Fuud",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/fuud.json",
+          "src/main/java/net/havensgaming/pemts/item/FuudItem.java"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Fuudrec",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuudrec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pemts/recipes/fuudrec.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Skull",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skull",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/item/SkullItem.java",
+          "src/main/resources/assets/pemts/models/item/skull.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Flesh",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flesh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/item/FleshItem.java",
+          "src/main/resources/assets/pemts/models/item/flesh.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Hand",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/item/HandItem.java",
+          "src/main/resources/assets/pemts/models/item/hand.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Pertloot",
+      "type": "loottable",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pertloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pemts/loot_tables/entities/pemt.json"
+        ]
+      }
+    },
+    {
+      "name": "Spiced",
+      "type": "potioneffect",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiced",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/potion/SpicedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Sauced",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sauced",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/SaucedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sauce",
+      "type": "potion",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sauce",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Seasoning",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seasoning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/item/SeasoningItem.java",
+          "src/main/resources/assets/pemts/models/item/seasoning.json"
+        ]
+      }
+    },
+    {
+      "name": "Yousuaced",
+      "type": "achievement",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yousuaced",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pemts/advancements/yousuaced.json"
+        ]
+      }
+    },
+    {
+      "name": "Shineypemt",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shineypemt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/client/renderer/ShineypemtRenderer.java",
+          "src/main/java/net/havensgaming/pemts/entity/ShineypemtEntity.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "ShineypemtOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shineypemt_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/ShineypemtOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shineyconversion",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shineyconversion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/ShineyconversionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sunflowerseed",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunflowerseed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/sunflowerseed.json",
+          "src/main/java/net/havensgaming/pemts/item/SunflowerseedItem.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Oraneghampter",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oraneghampter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/OraneghampterEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/OraneghampterRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Winterham",
+      "type": "livingentity",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winterham",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/WinterhamEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/WinterhamRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Creamhampter",
+      "type": "livingentity",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creamhampter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/CreamhampterEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/CreamhampterRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Greyhampter",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greyhampter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/GreyhampterEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/GreyhampterRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Kibble",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kibble",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/kibble.json",
+          "src/main/java/net/havensgaming/pemts/item/KibbleItem.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Kibbleore",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kibbleore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/kibbleore.json",
+          "src/main/resources/data/pemts/worldgen/placed_feature/kibbleore.json",
+          "src/main/resources/data/pemts/worldgen/configured_feature/kibbleore.json",
+          "src/main/java/net/havensgaming/pemts/block/KibbleoreBlock.java",
+          "src/main/resources/assets/pemts/models/block/kibbleore.json",
+          "src/main/resources/assets/pemts/blockstates/kibbleore.json"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Kibbles",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kibbles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/KibblesEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/KibblesRenderer.java",
+          "src/main/resources/assets/pemts/models/item/kibbles_spawn_egg.json"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Moff",
+      "type": "livingentity",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/moff_spawn_egg.json",
+          "src/main/java/net/havensgaming/pemts/entity/MoffEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/MoffRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Shinymoff",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shinymoff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/ShinymoffEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/ShinymoffRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Shineykibbles",
+      "type": "livingentity",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shineykibbles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/client/renderer/ShineykibblesRenderer.java",
+          "src/main/java/net/havensgaming/pemts/entity/ShineykibblesEntity.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Bait",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bait",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/block/BaitBlock.java",
+          "src/main/resources/assets/pemts/models/block/bait.json",
+          "src/main/resources/assets/pemts/models/item/bait.json",
+          "src/main/resources/assets/pemts/blockstates/bait.json"
+        ]
+      }
+    },
+    {
+      "name": "BaitOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bait_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/BaitOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sculkhampter",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculkhampter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/SculkhampterEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/SculkhampterRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "LhmaskRightclicked",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lhmask_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/LhmaskRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Lhmask",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lhmask",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/pemts/models/item/lhmask.json",
+          "src/main/java/net/havensgaming/pemts/item/LhmaskItem.java"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Maow",
+      "type": "livingentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/MaowEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/MaowRenderer.java",
+          "src/main/resources/assets/pemts/models/item/maow_spawn_egg.json"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Shinymaow",
+      "type": "livingentity",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shinymaow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/client/renderer/ShinymaowRenderer.java",
+          "src/main/java/net/havensgaming/pemts/entity/ShinymaowEntity.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "MaowEntityDies",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maow_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/MaowEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Suitman",
+      "type": "livingentity",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suitman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/entity/SuitmanEntity.java",
+          "src/main/java/net/havensgaming/pemts/client/renderer/SuitmanRenderer.java"
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Maskcheck",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maskcheck",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/MaskcheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "Suffacate",
+      "type": "potioneffect",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suffacate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/potion/SuffacateMobEffect.java"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Noair",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/havensgaming/pemts/procedures/NoairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/items"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "angy",
+      "files": [
+        "anggyspace-animal-104986"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "neutrel",
+      "files": [
+        "space-animal-104986"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "anggy",
+      "files": [
+        "anggyspace-animal-104986"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "amnient",
+      "files": [
+        "space-animal-104986"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "squek",
+      "files": [
+        "squeak-toy-1-174452"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "weird",
+      "files": [
+        "weird-hiccup-82601"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "kibblnoise",
+      "files": [
+        "sloth-inspired-imaginary-sound-no13-124915"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "lhsream",
+      "files": [
+        "lhno"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "lunascream",
+      "files": [
+        "muffled_luna"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.pemts.oraneghampter": "Hampter",
+      "entity.pemts.shinymoff": "Moff",
+      "item.pemts.winterham_spawn_egg": "Hampter Spawn Egg",
+      "death.attack.lhmask": "Succumbed to the Mask",
+      "entity.pemts.maow": "Maow",
+      "item.minecraft.lingering_potion.effect.sauce": "Lingering Sauce",
+      "item.pemts.hand": "Digested Hand",
+      "item.pemts.moff_spawn_egg": "Moff Spawn Egg",
+      "entity.pemts.moff": "Moff",
+      "item.pemts.shineypemt_spawn_egg": "Pumferfimch Spawn Egg",
+      "item.minecraft.potion.effect.sauce": "Bottle of Sauce",
+      "item.pemts.shineykibbles_spawn_egg": "Kibbles Spawn Egg",
+      "item.pemts.kibbles_spawn_egg": "Kibbles Spawn Egg",
+      "item.minecraft.tipped_arrow.effect.sauce": "Arrow of Sauce",
+      "subtitles.angy": "",
+      "advancements.yousuaced.descr": "Lookin tasty",
+      "item.pemts.suitman_spawn_egg": "Suited Figure Spawn Egg",
+      "entity.pemts.kibbles": "Kibbles",
+      "subtitles.ambient": "",
+      "item.pemts.shinymaow_spawn_egg": "Maow Spawn Egg",
+      "entity.pemts.shineykibbles": "Kibbles",
+      "subtitles.anggy": "",
+      "item.pemts.shinymoff_spawn_egg": "Moff Spawn Egg",
+      "subtitles.lunascream": "",
+      "item.pemts.sculkhampter_spawn_egg": "Sculk Hampter Spawn Egg",
+      "item.minecraft.splash_potion.effect.sauce": "Splash Sauce",
+      "entity.pemts.greyhampter": "Hampter",
+      "subtitles.squek": "",
+      "item.pemts.creamhampter_spawn_egg": "Hampter Spawn Egg",
+      "item.pemts.oraneghampter_spawn_egg": "Hampter Spawn Egg",
+      "subtitles.amnient": "",
+      "item.pemts.pemt_spawn_egg": "Pumferfimch Spawn Egg",
+      "item.pemts.greyhampter_spawn_egg": "Hampter Spawn Egg",
+      "subtitles.kibblnoise": "",
+      "entity.pemts.sculkhampter": "Sculk Hampter",
+      "item.pemts.kibble": "Kibble",
+      "item.pemts.sunflowerseed": "Sunflowerseed",
+      "effect.pemts.spiced": "Seasoned",
+      "item.pemts.lhmask": "Mysterious Mask",
+      "entity.pemts.winterham": "Hampter",
+      "entity.pemts.suitman": "Suited Figure",
+      "entity.pemts.shinymaow": "Maow",
+      "item.pemts.fuud": "Fuud",
+      "item.pemts.flesh": "Flesh",
+      "entity.pemts.shineypemt": "Pumferfimch",
+      "advancements.yousuaced.title": "Well Seasoned",
+      "item.pemts.seasoning": "Seasoning",
+      "entity.pemts.pemt": "Pumferfimch",
+      "block.pemts.kibbleore": "Kibbleore",
+      "effect.pemts.suffacate": "Suffocating",
+      "item.pemts.maow_spawn_egg": "Maow Spawn Egg",
+      "item.pemts.skull": "Skull",
+      "subtitles.neutrel": "",
+      "subtitles.lhsream": "",
+      "entity.pemts.creamhampter": "Hampter",
+      "subtitles.weird": "",
+      "block.pemts.bait": "Baited Box"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "mobs",
+        "children": []
+      },
+      {
+        "name": "items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "pemts",
+    "modName": "Pemts",
+    "version": "1.2.0",
+    "author": "LOGIHCKAC",
+    "websiteURL": "https://havensgaming.com",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.havensgaming.pemts",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

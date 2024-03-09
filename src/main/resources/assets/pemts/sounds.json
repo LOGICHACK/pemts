@@ -1,0 +1,83 @@
+{
+  "angy": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:anggyspace-animal-104986",
+        "stream": false
+      }
+    ]
+  },
+  "neutrel": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:space-animal-104986",
+        "stream": false
+      }
+    ]
+  },
+  "anggy": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:anggyspace-animal-104986",
+        "stream": false
+      }
+    ]
+  },
+  "amnient": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:space-animal-104986",
+        "stream": false
+      }
+    ]
+  },
+  "squek": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:squeak-toy-1-174452",
+        "stream": false
+      }
+    ]
+  },
+  "weird": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:weird-hiccup-82601",
+        "stream": false
+      }
+    ]
+  },
+  "kibblnoise": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:sloth-inspired-imaginary-sound-no13-124915",
+        "stream": false
+      }
+    ]
+  },
+  "lhsream": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:lhno",
+        "stream": false
+      }
+    ]
+  },
+  "lunascream": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "pemts:muffled_luna",
+        "stream": false
+      }
+    ]
+  }
+}
